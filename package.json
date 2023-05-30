@@ -10,9 +10,12 @@
     "prepare": "husky install"
   },
   "lint-staged": {
+    "**/*.js": "eslint",
     "**/*": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "parcel": "^2.9.1",
